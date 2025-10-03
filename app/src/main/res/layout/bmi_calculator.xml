@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="BMI CALCULATOR"
+      android:textSize="45sp"
+      android:background="@color/layout"
+      android:textColor="@color/white"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:fontFamily="@font/poppins_regular"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="Enter your Details"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:fontFamily="@font/poppins_regular"
+        />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="55dp"
+       android:background="@drawable/input_box"
+       android:elevation="8dp"
+       android:translationZ="4dp"
+       android:padding="5dp"
+       android:hint="Height(cm)"
+       android:textColorHint="@color/black"
+       android:layout_margin="5dp"
+       android:fontFamily="@font/poppins_regular"
+       />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/input_box"
+        android:elevation="8dp"
+        android:hint="Weight(Kg)"
+        android:padding="5dp"
+        android:textColorHint="@color/black"
+        android:translationZ="4dp"
+        android:fontFamily="@font/poppins_regular"
+        />
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textColor="@color/white"
+        android:layout_marginHorizontal="40dp"
+        android:text="Calculate BMI"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationZ="4dp"
+        android:elevation="4dp"
+        android:background="@drawable/calculate_bmi"
+        android:fontFamily="@font/poppins_regular"
+        />
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="170dp"
+         android:orientation="vertical"
+         android:layout_margin="10dp"
+          android:background="@drawable/linear_layout"
+         >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Your BMI"
+             android:layout_gravity="center"
+             android:padding="5dp"
+             android:textSize="18sp"
+             android:fontFamily="@font/poppins_regular"
+             />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="22.8"
+             android:layout_gravity="center"
+             android:padding="1dp"
+             android:textStyle="bold"
+             android:textSize="20sp"
+             android:fontFamily="@font/poppins_regular"
+             />
+
+         <ProgressBar
+             style="?android:attr/progressBarStyleHorizontal"
+             android:layout_width="match_parent"
+             android:layout_height="20dp"
+             android:layout_margin="16dp"
+             android:max="100"
+             android:progress="77"
+             android:indeterminate="false"
+             android:progressDrawable="@drawable/progress_bar"/>
+
+
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Normal Weight"
+             android:layout_gravity="center"
+             android:padding="1dp"
+             android:textColor="#5A5858"
+             android:textStyle="bold"
+             android:textSize="15sp"
+             android:fontFamily="@font/poppins_regular"
+             />
+
+
+
+
+     </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:layout_margin="10dp"
+        android:background="@drawable/grid_layout"
+        android:elevation="4dp"
+        android:translationZ="4dp"
+        android:padding="5dp"
+        >
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="fill"
+           android:layout_columnWeight="1"
+           android:text="UnderWt"
+           android:textColor="#5A5858"
+           android:gravity="center"
+           android:textSize="16sp"
+           android:layout_margin="5dp"
+           android:fontFamily="@font/poppins_regular"
+
+           />
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:text="Normal"
+            android:textColor="#5A5858"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_regular"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:text="OverWt"
+            android:textColor="#5A5858"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:text="Obese"
+            android:textColor="#5A5858"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            />
+
+
+
+    </GridLayout>
+
+</LinearLayout>

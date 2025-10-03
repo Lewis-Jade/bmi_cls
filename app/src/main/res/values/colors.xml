@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_color">#0C0914</color>
+    <color name="numbers">#070B0E</color>
+    <color name="equals">#FF8F00</color>
+    <color name="delete_btn">#E80F0F</color>
+    <color name="spacial_keys">#2E71F8</color>
+    <color name="layout">#0E0E19</color>
+    <color name="bmi_calc">#0E0E19</color>
+</resources>
