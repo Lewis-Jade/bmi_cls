@@ -46,6 +46,7 @@
         android:translationZ="5dp"
         />
     <TextView
+        android:id="@+id/bminav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate BMI"
@@ -68,6 +69,7 @@
         android:translationZ="5dp"
         />
     <TextView
+        android:id="@+id/calcnav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculator"
@@ -77,6 +79,5 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_regular"
         />
-
 
 </LinearLayout>
