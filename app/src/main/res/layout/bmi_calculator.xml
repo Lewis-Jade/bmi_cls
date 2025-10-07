@@ -119,7 +119,7 @@
              android:layout_height="20dp"
              android:layout_margin="16dp"
              android:max="100"
-             android:progress="77"
+             android:progress="37"
              android:indeterminate="false"
              android:progressDrawable="@drawable/progress_bar"/>
 

@@ -1,10 +1,12 @@
 package com.example.calculator;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainMenu extends AppCompatActivity {
@@ -47,8 +49,16 @@ public class MainMenu extends AppCompatActivity {
 
         });
 
+        ImageView exitBtn = findViewById(R.id.exitApp);
 
 
+        exitBtn.setOnClickListener(view-> finish());
 
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                finish();
+            }
+        });
     }
 }
