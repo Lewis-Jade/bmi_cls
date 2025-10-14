@@ -2,6 +2,8 @@ package com.example.calculator;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,6 +17,9 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+
+        getWindow().setStatusBarColor(Color.parseColor("#50c9c3"));
+
         ImageView bmiCalculator = findViewById(R.id.bmicalc);
         ImageView myCalculator = findViewById(R.id.calculator);
         TextView bmiNav = findViewById(R.id.bminav);

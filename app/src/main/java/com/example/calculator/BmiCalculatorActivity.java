@@ -1,6 +1,7 @@
 package com.example.calculator;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ImageView;
 
@@ -15,6 +16,7 @@ public class BmiCalculatorActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setStatusBarColor(Color.parseColor("#50c9c3"));
         setContentView(R.layout.bmi_calculator);
          ImageView backBtn = findViewById(R.id.back);
         backBtn.setOnClickListener(view -> finish());

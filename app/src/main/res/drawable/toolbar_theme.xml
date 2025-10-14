@@ -4,14 +4,14 @@
     android:shape="rectangle"
 
     >
- <gradient
-     android:startColor="#50c9c3"
-     android:endColor="#96deda"
-     android:angle="45"
-     android:type="linear"
+    <gradient
+        android:startColor="#50c9c3"
+        android:endColor="#96deda"
+        android:angle="45"
+        android:type="linear"
 
 
-     />
+        />
 
 
 
